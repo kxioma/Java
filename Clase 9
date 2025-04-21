@@ -1,0 +1,18 @@
+public class Tarjetadecredito extends pago{
+    private int número;
+    public: Tarjetadecredito(double monto, String fecha, int número){
+        super(monto, fecha );
+        this.número =número;
+    }
+
+public double pagar(){
+    return monto *1.30;
+}
+
+public String toString(){
+    return"Tarjetadecredito monto: " + monto +
+    "fecha: " + fecha +
+    "número: " + número +"}" ;
+}
+
+}
