@@ -1,6 +1,6 @@
 // Inicio de la solución 
-public class PrecioTotal { 
-    // Atributos 
+public class PrecioTotal {
+    // Atributos
     private double totalPrecios;
     private double totalBodega;
     private double totalCabina;
@@ -11,7 +11,7 @@ public class PrecioTotal {
         this.equipaje = equipaje;
     }
 
-    // Metodos 
+    // Metodos
     public void calcularTotales() {
         for (Equipaje e : equipaje) {
             double precio = e.calcularPrecio(); // Calcula el precio del equipaje actual
@@ -23,13 +23,13 @@ public class PrecioTotal {
                 totalCabina += precio;
             }
         }
-    } 
+    }
 
-    public void mostrarTotales() { 
-        // Calculo de totales 
-        calcularTotales(); 
-        System.out.println("Total Equipaje " + totalPrecios); 
-        System.out.println("Total Bodega " + totalBodega); 
-        System.out.println("Total Cabina " + totalCabina); 
-    }  
-} 
+    public void mostrarTotales() {
+        // Calculo de totales
+        calcularTotales();
+        System.out.println("Total Equipaje " + totalPrecios);
+        System.out.println("Total Bodega " + totalBodega);
+        System.out.println("Total Cabina " + totalCabina);
+    }
+}

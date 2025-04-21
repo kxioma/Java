@@ -1,8 +1,8 @@
-public class Bodega extends Equipaje { 
-    // Constantes 
-    private static final double CAPACIDAD = 8.0; 
+public class Bodega extends Equipaje {
+    // Constantes
+    private static final double CAPACIDAD = 8.0;
 
-    // Constructores 
+    // Constructores
     public Bodega(double peso, double tamanio) {
         super(peso, tamanio);
     }
@@ -14,17 +14,17 @@ public class Bodega extends Equipaje {
     public Bodega() {
         super();
     }
-   
-    // Metodos 
-    public double CalcularPrecio(){ 
+
+    // Metodos
+    public double CalcularPrecio() {
         // Calculos (
-        return getPrecioBase() + (getPeso() * getTamanio() * CAPACIDAD); 
-    } 
+        return getPrecioBase() + (getPeso() * getTamanio() * CAPACIDAD);
+    }
 
     public String toString() {
         return "Bodega { peso: " + getPeso() +
-               ", tamanio: " + getTamanio() +
-               ", precioBase: " + getPrecioBase() +
-               ", precio final: " + calcularPrecio() + " }";
+                ", tamanio: " + getTamanio() +
+                ", precioBase: " + getPrecioBase() +
+                ", precio final: " + calcularPrecio() + " }";
     }
 }
