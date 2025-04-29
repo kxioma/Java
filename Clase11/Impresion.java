@@ -1,20 +1,21 @@
 package Clase11;
 
+import java.util.List;
+
 public class Impresion extends Producto {
     private String color;
-    private Foto[] fotos;
+    private List<Foto> fotos;
 
-    public Impresion(int numero, String color, Foto[] fotos) {
+    public Impresion(int numero, String color, List<Foto> fotos) {
         super(numero);
         this.color = color;
         this.fotos = fotos;
     }
 
-    // Sobrescritura del método mostrarDetalle
-    public void mostrarDetalle() {
-        System.out.println("Impresión #" + getNumero() + ", Color: " + color);
-     for (Foto f : fotos) {
-            f.print(); // Composición: usa objetos Foto
+    public void mostrarDetalles() {
+        System.out.println("Impresión #" + numero + " en color: " + color);
+        for (Foto foto : fotos) {
+            foto.print();
         }
     }
 }
