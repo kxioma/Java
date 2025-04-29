@@ -5,7 +5,7 @@ public class Cliente {
     private String nombre;
 
 
-    public Cliente(int cedula, String nombre){
+    public Cliente(int cedula){
         this.cedula= cedula;
         this.nombre= nombre;
     }
