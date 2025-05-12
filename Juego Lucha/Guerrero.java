@@ -12,5 +12,6 @@ import java.util.Random;
          int dano = rand.nextInt((MAX_DANO - MIN_DANO) + 1) + MIN_DANO + bonificacion;
          oponente.recibirDano(dano);
          System.out.println(nombre + " (Guerrero) golpea brutalmente a " + oponente.getNombre() + " causando " + dano + " puntos de daño.");
-     }
+    }
+}
  
