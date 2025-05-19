@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package Motos;
 
+=======
+>>>>>>> origin
 import java.util.Random;
 
 public class Moto {
@@ -36,4 +39,8 @@ public class Moto {
     public int getPuntosDeVida() {
         return this.puntosDeVida;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin

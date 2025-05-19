@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package Motos;
 
+=======
+>>>>>>> origin
 import java.util.Random;
 
 public class MT extends Moto {
